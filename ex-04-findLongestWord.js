@@ -8,6 +8,36 @@
 
 // ++ YOUR CODE below
 
+function findLongestWord (text) {
+	var words = text.split (" ");
+	var longest = "";
+
+	for (var i = 0; i < words.length; i++) {
+		var currentword = removePunctuation(words[i]);
+
+		if (currentword.length > longest.length) {
+			longest = currentword;
+		}
+	}
+
+	return longest
+
+}
+
+function removePunctuation (palabra) {
+	//longest = don't
+	var cleanLongest = "";
+
+	for (var i = 0; i < palabra.length; i++) {
+		var char = palabra[i];
+
+		if (char !== "'") {
+			cleanLongest = cleanLongest + char;
+		}
+	}
+	return cleanLongest
+}
+
 
 
 

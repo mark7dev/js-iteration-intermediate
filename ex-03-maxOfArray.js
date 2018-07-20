@@ -14,19 +14,31 @@
 //	return max
 //}
 
-function maxOfArray (array) {
-    var result = 0;
+//function maxOfArray (array) {
+  //  var result = 0;
     
-    for (var i = 0; i < array.length; i++) {
-      var number = array[i];
+    //for (var i = 0; i < array.length; i++) {
+      //var number = array[i];
 
-      if (number > result) {
-        result = number;
-      }
+      //if (number > result) {
+        //result = number;
+      //}
+    //}
+    //return result;
+  //}
+
+function maxOfArray (array) {
+  var result = 0;
+
+  for (var i = 0; i < array.length; i++) {
+    var maxnumber = array[i];
+
+    if (array[i] > result) {
+      result = maxnumber;
     }
-    return result;
   }
-
+  return result;
+}
 
 
 

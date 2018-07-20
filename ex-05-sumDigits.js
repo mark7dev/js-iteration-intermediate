@@ -14,9 +14,15 @@
  // ++ YOUR CODE below
 
 
+function sumDigits (number) {
+	var number = number + "";
+	var suma = 0;
 
-
-
+	for (var i = 0; i < number.length; i++) {
+		suma = suma + parseInt(number[i])
+	}
+	return suma;
+}
 
 
 
